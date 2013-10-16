@@ -38,6 +38,10 @@ attr_reader :x,:y
 		
 #producto # devuelve un nuevo racional que multiplica al objeto que invoca el que le pasan como parámetro
 
+	def *(other)
+		Racional.new("#{@x.to_i*other.x.to_i}","#{@y.to_i*other.y.to_i}")
+	end
+	
 #division # devuelve un nuevo racional que multiplica al objeto que invoca el que le pasan como parámetro
 
 
