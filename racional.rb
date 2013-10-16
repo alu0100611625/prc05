@@ -30,9 +30,12 @@ attr_reader :x,:y
 		Racional.new("#{@x.to_i+other.x.to_i}","#{@y.to_i+other.y.to_i}")
 	end
 
-
 #resta # devuelve un nuevo racional que resta al objeto que invoca el que le pasan como parámetro
-	
+
+	def -(other)
+		Racional.new("#{@x.to_i-other.x.to_i}","#{@y.to_i-other.y.to_i}")
+	end
+		
 #producto # devuelve un nuevo racional que multiplica al objeto que invoca el que le pasan como parámetro
 
 #division # devuelve un nuevo racional que multiplica al objeto que invoca el que le pasan como parámetro
